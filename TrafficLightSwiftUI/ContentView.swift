@@ -8,16 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+    
+    var textUI = "Start"
+    
+    func printHi() {
+    print("Hello")
     }
-}
+    
+    func action() {
+        
+    }
+    
+    func buttonAction() {
+        print("lol")
+    }
+    
+    var body: some View {
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            VStack {
+                RedLightView()
+                YellowLightView()
+                GreenLightView()
+                Button("Press me") { print("HI")}.buttonStyle(ButtonView())
+                    
+                }
+                }
+            }
+        }
+    
+    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

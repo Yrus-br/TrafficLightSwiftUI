@@ -11,6 +11,10 @@
 		3FD47F692943641A00BBC8B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD47F682943641A00BBC8B7 /* ContentView.swift */; };
 		3FD47F6B2943641B00BBC8B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD47F6A2943641B00BBC8B7 /* Assets.xcassets */; };
 		3FD47F6E2943641B00BBC8B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD47F6D2943641B00BBC8B7 /* Preview Assets.xcassets */; };
+		3FD47F75294365EC00BBC8B7 /* YellowLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD47F74294365EC00BBC8B7 /* YellowLightView.swift */; };
+		3FD47F77294365FB00BBC8B7 /* GreenLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD47F76294365FB00BBC8B7 /* GreenLightView.swift */; };
+		3FD47F792943660D00BBC8B7 /* RedLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD47F782943660C00BBC8B7 /* RedLightView.swift */; };
+		3FD47F7D29437FCA00BBC8B7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD47F7C29437FCA00BBC8B7 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		3FD47F682943641A00BBC8B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FD47F6A2943641B00BBC8B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD47F6D2943641B00BBC8B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FD47F74294365EC00BBC8B7 /* YellowLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowLightView.swift; sourceTree = "<group>"; };
+		3FD47F76294365FB00BBC8B7 /* GreenLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLightView.swift; sourceTree = "<group>"; };
+		3FD47F782943660C00BBC8B7 /* RedLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLightView.swift; sourceTree = "<group>"; };
+		3FD47F7C29437FCA00BBC8B7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				3FD47F662943641A00BBC8B7 /* TrafficLightSwiftUIApp.swift */,
 				3FD47F682943641A00BBC8B7 /* ContentView.swift */,
+				3FD47F7C29437FCA00BBC8B7 /* ButtonView.swift */,
+				3FD47F74294365EC00BBC8B7 /* YellowLightView.swift */,
+				3FD47F76294365FB00BBC8B7 /* GreenLightView.swift */,
+				3FD47F782943660C00BBC8B7 /* RedLightView.swift */,
 				3FD47F6A2943641B00BBC8B7 /* Assets.xcassets */,
 				3FD47F6C2943641B00BBC8B7 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD47F692943641A00BBC8B7 /* ContentView.swift in Sources */,
+				3FD47F792943660D00BBC8B7 /* RedLightView.swift in Sources */,
+				3FD47F7D29437FCA00BBC8B7 /* ButtonView.swift in Sources */,
+				3FD47F75294365EC00BBC8B7 /* YellowLightView.swift in Sources */,
 				3FD47F672943641A00BBC8B7 /* TrafficLightSwiftUIApp.swift in Sources */,
+				3FD47F77294365FB00BBC8B7 /* GreenLightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
