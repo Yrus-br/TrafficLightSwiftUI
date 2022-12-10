@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ButtonView: ButtonStyle {
-        func makeBody(configuration: Configuration) -> some View {
-            configuration.label
-                .padding()
-                .background(.blue)
-                .foregroundColor(.white)
-                .clipShape(Capsule())
-                .overlay(Capsule().stroke(Color.white, lineWidth: 4))
-        }
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(width: 100)
+            .padding()
+            .background(.blue)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.white, lineWidth: 2))
     }
+}

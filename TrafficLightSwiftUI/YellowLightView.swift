@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct YellowLightView: View {
+    
+    var isOn: Bool
+    
     var body: some View {
         VStack{
             Circle()
                 .foregroundColor(.yellow)
                 .frame(width: 100)
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .shadow(radius: 10)
-            Spacer()
-                .frame(height: 30)
+                .opacity(isOn ? 1 : 0.5)
+                .shadow(radius: 5)
         }
     }
 }
 
-struct YellowLightView_Previews: PreviewProvider {
-    static var previews: some View {
-        YellowLightView()
-    }
-}

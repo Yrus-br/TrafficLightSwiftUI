@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct GreenLightView: View {
+    
+    var isOn: Bool
+    
     var body: some View {
-        Circle()
-            .foregroundColor(.green)
-            .frame(width: 100)
-            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            .shadow(radius: 10)
-        Spacer()
-            .frame(height: 150)
+        VStack{
+            Circle()
+                .foregroundColor(.green)
+                .frame(width: 100)
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .opacity(isOn ? 1 : 0.5)
+                .shadow(radius: 5)
+        }
     }
 }
 
-struct GreenLightView_Previews: PreviewProvider {
-    static var previews: some View {
-        GreenLightView()
-    }
-}
+

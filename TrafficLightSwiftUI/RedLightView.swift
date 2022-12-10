@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct RedLightView: View {
+    
+    var isOn: Bool
+    
     var body: some View {
-        VStack {
+        VStack{
             Circle()
                 .foregroundColor(.red)
                 .frame(width: 100)
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .shadow(radius: 10)
-            Spacer()
-                .frame(height: 30)
+                .shadow(radius: 5)
+                .opacity(isOn ? 1 : 0.5)
         }
     }
 }
 
-struct RedLightView_Previews: PreviewProvider {
-    static var previews: some View {
-        RedLightView()
-    }
-}
