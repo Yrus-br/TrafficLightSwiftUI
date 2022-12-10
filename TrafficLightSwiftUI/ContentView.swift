@@ -11,36 +11,33 @@ struct ContentView: View {
     
     @State var counter = 0
     
-    var textUI = "Start"
+    private var textUI = "Start"
     
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            VStack(spacing: 10) {
+            VStack(spacing: 250) {
                 VStack(spacing: 30) {
                     switch counter {
                     case 1:
-                        RedLightView(isOn: true)
-                        YellowLightView(isOn: false)
-                        GreenLightView(isOn: false)
+                        TrafficLight(color: .red, isOn: true)
+                        TrafficLight(color: .yellow, isOn: false)
+                        TrafficLight(color: .green, isOn: false)
                     case 2:
-                        RedLightView(isOn: false)
-                        YellowLightView(isOn: true)
-                        GreenLightView(isOn: false)
+                        TrafficLight(color: .red, isOn: false)
+                        TrafficLight(color: .yellow, isOn: true)
+                        TrafficLight(color: .green, isOn: false)
                     case 3:
-                        RedLightView(isOn: false)
-                        YellowLightView(isOn: false)
-                        GreenLightView(isOn: true)
+                        TrafficLight(color: .red, isOn: false)
+                        TrafficLight(color: .yellow, isOn: false)
+                        TrafficLight(color: .green, isOn: true)
                     default:
-                        RedLightView(isOn: false)
-                        YellowLightView(isOn: false)
-                        GreenLightView(isOn: false)
+                        TrafficLight(color: .red, isOn: false)
+                        TrafficLight(color: .yellow, isOn: false)
+                        TrafficLight(color: .green, isOn: false)
                     }
                 }.shadow(color: .white, radius: 10)
-                
-                Spacer()
-                    .frame(height: 200)
                 
                 Button() {
                     counter += 1
@@ -49,6 +46,7 @@ struct ContentView: View {
                     }
                 } label: {
                     Text(counter == 0 ? "Start" : "Next")
+                        .font(.title2)
                 }
                 .buttonStyle(ButtonView())
             }
