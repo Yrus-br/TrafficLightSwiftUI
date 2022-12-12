@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TrafficLight: View {
     
-    var color: Color
-    var isOn: Bool
+    let color: Color
+    let alpha: Double
     
     var body: some View {
         VStack{
@@ -18,8 +18,7 @@ struct TrafficLight: View {
                 .foregroundColor(color)
                 .frame(width: 100)
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .opacity(isOn ? 1 : 0.5)
-                .shadow(radius: 5)
+                .opacity(alpha)
         }
     }
 }
