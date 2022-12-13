@@ -1,2 +1,2 @@
 # TrafficLightSwiftUI
-Main Inteface of App
+First App on swiftUI
